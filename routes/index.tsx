@@ -1,4 +1,3 @@
-import { h } from "preact";
 import { useState } from "preact/hooks";
 import { jsonToTypes } from "../utils/jsonToTypes.ts";
 
@@ -12,6 +11,7 @@ export default function Home() {
       const ts = jsonToTypes("Root", obj);
       setTsOutput(ts);
     } catch (e) {
+      console.log(e);
       setTsOutput("// Invalid JSON");
     }
   }
