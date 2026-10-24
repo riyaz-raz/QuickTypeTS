@@ -1,16 +1,26 @@
-# Fresh project
+# QuickTypeTS
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+JSON ➡ TypeScript converter built with **Node + React (Vite) + Tailwind CSS**.
 
-### Usage
+## Usage
 
-Make sure to install Deno: https://deno.land/manual/getting_started/installation
-
-Then start the project:
+Requires [Node.js](https://nodejs.org) (v18+). Install dependencies:
 
 ```
-deno task start
+npm install
 ```
 
-This will watch the project directory and restart as necessary.
+Start the dev server:
+
+```
+npm run dev
+```
+
+Then open http://localhost:5173, paste JSON on the left, and click **Convert** to
+generate TypeScript interfaces on the right.
+
+### Other commands
+
+- `npm run build` — type-check and build a production bundle to `dist/`
+- `npm run preview` — serve the production build locally
+
