@@ -3,13 +3,40 @@ node_modules/
 
 # env
 .env
+.env.local
+.env.*.local
+.env.development
 .env.production
 
 # build output
 dist/
-
-# vite
 dev-dist/
 
 # typescript
 *.tsbuildinfo
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# editor/IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# test coverage
+coverage/
+
+# macOS
+.DS_Store
+
+# misc
+*.local
+.cache/
